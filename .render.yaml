@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: label-studio
+    env: python
+    buildCommand: pip install -e .
+    startCommand: label-studio
+    envVars:
+      - key: PORT
+        value: 8080
